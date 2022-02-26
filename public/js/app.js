@@ -25,7 +25,7 @@ weatherForm.addEventListener('submit', (e) => {
             else {
                 messageOne.textContent=`Location: ${data.location},${data.region},${data.country}`;
                 messageTwo.textContent=`Localtime: ${data.localtime}`;
-                messageThree.textContent=`Temperature: ${data.temperature} Celcius`;
+                messageThree.textContent=`Temperature: ${data.temperature} celcius`;
                 messageFour.textContent=`Is Day? : ${data.day}`;
 
 

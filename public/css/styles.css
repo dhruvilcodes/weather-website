@@ -32,6 +32,10 @@ header a{
     text-decoration: none;
 }
 
+div a{
+    color: #888888;
+    text-decoration: none;
+}
 .portrait {
      width: 250px;
 }
@@ -53,5 +57,5 @@ button{
      color : white;
      padding: 8px;
 
-     
+
 }
