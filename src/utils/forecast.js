@@ -1,5 +1,6 @@
 const request = require('request');
-
+const dotenv = require('dotenv');
+dotenv.config();
 const forecast = (latitude, longitute, callback) => {
   
     const url = `http://api.weatherstack.com/current?access_key=${API_KEY_WEATHER}&query=${latitude},${longitute}&units=m`;
