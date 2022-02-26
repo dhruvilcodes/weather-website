@@ -70,8 +70,6 @@ app.get('/weather',(req,res)=>{
                 day: forecastData.day,
                 localtime: forecastData.localtime
                 
-
-
             })
 
         })
