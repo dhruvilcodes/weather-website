@@ -7,7 +7,7 @@ const request= require('postman-request');
 const geocode= require('./utils/geocode.js');
 const forecast= require('./utils/forecast.js');
 
-
+const port= process.env.PORT||1234
 //Define Paths for Express config
 const publicDirPath=path.join(__dirname,'../public');
 
@@ -113,6 +113,7 @@ app.get('*',(req,res)=>{
 
     })
 })
-app.listen(1234,(err,data)=>{
-    console.log('Server is up on port 1234');
-});
+ 
+app.listen(port,()=>{
+    console.log(`Service is Running on ${port}`);
+})
