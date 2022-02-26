@@ -6,7 +6,7 @@ const hbs=require('hbs')
 const request= require('postman-request');
 const geocode= require('./utils/geocode.js');
 const forecast= require('./utils/forecast.js');
-
+require('dotenv').config();
 const port= process.env.PORT||1234
 //Define Paths for Express config
 const publicDirPath=path.join(__dirname,'../public');
